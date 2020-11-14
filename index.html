@@ -1,182 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> BLM</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
 
-          @media {max-width: 499 px} {
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+h1  {
+    color: red;
+    text-align: center;
+    background-color: #086A87;
+    font-family: Arial
+}
 
-                h1::before {
+/* Style tab links */
+.tablink {
+  background-color: white;
+  color: #086A87;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
 
-                content: "Welcome!"
-                }
-      }
+.tablink:hover {
+  background-color: #777;
+}
 
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #086A87;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
-          h1  {
-              color: red;
-              text-align: center;
-              background-color: beige;
-          }
-            div  {
+#Home {background-color: #CEECF5;}
+#News {background-color: #F6CECE;}
+#Contact {background-color: #D0F5A9;}
+#About {background-color: #F5F6CE;}
+#BLM {background-color: white}
 
-              background-color: teal;
-              width: 400 px
-              height: 400 px
-              padding: 20 px;
-              margin: 30  px;
-              font-family: Arial;
-              font-weight: bold;
-          }
+</style>
+</head>
+<body>
 
-          p, ol, th, td ::selection {
+<button class="tablink" onclick="openPage('Home', this, '#CEECF5')">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#F6CECE')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, '#D0F5A9')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, '#F5F6CE')">About</button>
+<button class="tablink" onclick="openPage('BLM', this, 'white')">BLM</button>
 
-            color: red;
-            background-color: yellow;
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
 
-          }
-          button {
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
 
-            width: 200 px;
-            height: 50 px;
-            font-size: 24 px;
-            background-color: green;
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
 
-          }
-          button: hover {
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
 
-            background-color: orange
-
-          }
-          ol > li {
-
-            color:red;
-          }
-
-          table {
-
-            border: 2 px solid blue;
-            border-collapse: collapse;
-            width: 50 px;
-          }
-          th,td {
-
-              border: 1 px solid black;
-            <!--  padding: 50%;      //-->
-              text-align: center;
-          }
-          th{
-
-            background-color: lightgrey
-          }
-          #top
-          {
-              font_size: 36 px;
-              color: red;
-          }
-          #middle
-          {
-              font_size: 24 px;
-              color: blue;
-          }
-          #bottom
-          {
-              font_size: 12 px;
-          }
-          .name {
-            font-weight: bold;
-          }
-          img{
-            padding: 100 px;
-
-          }
-
-          </style>
-    </head>
-
-    <body>
-      <div class="container">
-        <div class="alert alert-primary" role="alert">
-          This is an alert message. News!
-          </div>
-
-      <a href="hello.hltml">Click here! </a>
-
-      <div id= "top">
-        This is the <span class="name">top</span> of my web page
-        </div>
-        <div id= "middle">
-          This is the <span class="name">middle</span> of my web page
-          </div>
-          <div id= "bottom">
-            This is the <span class="name">bottom</span> of my web page
-            </div>
-<h1 > No Such Thing As Model Minorities! </h1>
-
-        Asian Americans are at the top of the model minority list, when in reality, they have
-        been more successful than other minority groups due to:
-
-        <ul>
-          <li> immigration policies </li>
-          <ol>
-              <li> Immigration and Naturalized Act of 1965 </li>
-                      <ul>
-                             a. This act increased immigration for skilled Asian American workers
-                        </ul>
-            </ol>
-
-          <li> Anti-African American sentiment </li>
-          <ul>
-              Before the 1960s, Asian Americans were discriminated against and exploited for labor. <<br>
-              However, after the anti-African American movement started to gain momentum, Asian Americans <<br>
-              experienced less racism and politicians made it seem that because they had worked hard, they <<br>
-
-            </ul>
-          <li> Item1 </li>
-          </ul>
-        An Ordered List:
-          <ol>
-            <li> Item1 </li>
-            <li> Item1 </li>
-            <li> Item1 </li>
-            </ol>
-            <div>
-
-            <img src = "Black_Lives_Matter_protest.jpg" height = "200" width = "300" ">
-            </div>
-            <h2> Table 1 </h2>
-
-            <table>
-              <tr>
-                <th> First Name </th>
-                <th> Last Name </th>
-                <th> Years in Office </th>
-                </tr>
-
-                <tr>
-                  <td> George  </td>
-                  <td>  Washington </td>
-                  <td> blah </td>
-                  </tr>
-
-                  <tr>
-                    <td> John  </td>
-                    <td>  Adams </td>
-                    <td> blah </td>
-                    </tr>
-
-                    <tr>
-                      <td> Thomas  </td>
-                      <td>  Jefferson </td>
-                      <td> blah </td>
-                      </tr>
-
-                      </table>
-
-            <button>Submit!</button>
+<div id="BLM" class="tabcontent">
+  <h3>BLM</h3>
+  <h1 > No Such Thing As Model Minorities! </h1>
 
 
-    </body>
+  <img src = "Black_Lives_Matter_protest.jpg" height = "200" width = "50%" align="middle"">
+
+    Asian Americans are at the top of the model minority list, when in reality, they have
+    been more successful than other minority groups due to:
+
+    <ul>
+      <li> immigration policies </li>
+      <ol>
+          <li> Immigration and Naturalized Act of 1965 </li>
+                  <ul>
+                         a. This act increased immigration for skilled Asian American workers
+                    </ul>
+        </ol>
+
+      <li> Anti-African American sentiment </li>
+      <ul>
+          Before the 1960s, Asian Americans were discriminated against and exploited for labor. <<br>
+          However, after the anti-African American movement started to gain momentum, Asian Americans <<br>
+          experienced less racism and politicians made it seem that because they had worked hard, they <<br>
+
+        </ul>
+</p>
+
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none"
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
 </html>
