@@ -1,0 +1,23 @@
+to have your code more concise and to the point, create another html file named 
+styles.css which will contain: 
+
+h1{ 
+
+color: red; 
+text-align: center; 
+} 
+p{ 
+
+color: red; 
+
+} 
+ and in your main src file write: 
+
+<head> 
+<title> blah </title> 
+< link rel ="stylesheet" href " styles.css"> 
+</head> 
+//outside the body 
+
+
+
