@@ -1,74 +1,249 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {box-sizing: border-box}
 
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+h1  {
+    color: red;
+    text-align: center;
 
-#container{
-    width: 1200px;
-    overflow: hidden;
+    font-family: Arial
 }
-#sliderbox{
-    postion: relative;
-    width: 1200px;
-    animation-name: slideranimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-#sliderbox img{
-      float: left;
-}
-@keyframes slideranimation{
-  0%
-  {
-    left: 0px;
-  }
-  20%
-  {
-    left: 0px;
-  }
-  25%
-  {
-    left: -800px;
-  }
-  45%
-  {
-    left: -800px;
-  }
-  50%
-  {
-    left: -1600px;
-  }
-  70%
-  {
-    left: -1600px;
-  }
-  75%
-  {
-    left: -2400px;
-  }
-  0%
-  {
-    left: 0px;
-  }
-
+h2{
+  color:green
+  text-align: center;
 }
 
-</style>
+/* Style tab links */
+.tablink {
+  background-color: white;
+  color: #086A87;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #086A87;
+  display: none;
+  padding: 100px 20px;
+  height: 200%;
+}
+
+
+
+#Home {background-color: #F8E0E0;}
+#Climate_Change {background-color: Beige;}
+#Health_Care {background-color: #F8E0E0;}
+#Immigration_Policy {background-color: Beige;}
+#BLM {background-color: #F8E0E0}
+
+</style>"
 </head>
-
 <body>
 
-  <div id="container"">
+<button class="tablink" onclick="openPage('Home', this, '#F8E0E0')">Home</button>
+<button class="tablink" onclick="openPage('Climate_Change', this, 'Beige')" id="defaultOpen">Climate Change</button>
+<button class="tablink" onclick="openPage('Health_Care', this, '#F8E0E0')">Health Care</button>
+<button class="tablink" onclick="openPage('Immigration_Policy', this, '#Beige')">Immigration Policy</button>
+<button class="tablink" onclick="openPage('BLM', this, '#F8E0E0')">BLM</button>
 
-  <!-- Full-width images with number and caption text -->
-      <div id="sliderbox">
-            <img src="IMG_1.jpg" />
-                <img src="IMG_3.jpg"/>
-              <img src="IMG_4.jpg" />
-      </div>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
 </div>
 
+<div id="Climate_Change" class="tabcontent">
+<p>
+  <h1><center>Climate Change</center></h1>
+
+
+
+<H4>What is climate change?</H4><img src="Climate_polarbear.jpg" height="200" width="50%" align="middle" /><img src="Climate_greenhouse.jpg" height="200" width="50%" align="middle" />
+
+  <ul>Climate change is the change of earth's conditions, such as temperature and rainfall, in a region over a long duration of time.</ul>
+
+<H4>Why is it so Harmful? </H4>
+  <ul>
+    <li> Rising sea levels</li>
+    <li>Shrinking mountain glaciers</li>
+    <li>Ice melting at a faster rate in low temperature areas</li>
+</ul>
+<H4>The Greenhouse Effect</H4>
+<ul>
+The gases in Earth's environment are trapping the sun's heat in our atmosphere, part of which makes earth so sustainable. However,
+
+burning fossil fuels such as coal and oil produce more carbon dioxide into the atmosphere causing the temperature of earth to rise.
+
+extra green house gases such as carbon dioxide and methane cause earth to trap more and more heat
+
+Earth's surface warms up in the sunlight. At night, Earth's surface cools, releasing heat back into the air. But some of the heat is trapped by the greenhouse gases in the atmosphere. That's what keeps our Earth a warm and cozy 58 degrees Fahrenheit (14 degrees Celsius), on average.
+
+if the climate were to increase 2 degrees celsius since fossil fuels were discovered - spike in mass migration, wildfires, deathly heat stress
+</ul>
+
+<H4> What are we currently doing?</H4>
+
+    Green New Deal?
+
+    14 page first steps documentation - what we need to do to solve the climate crisis
+    <ul>
+      <li>Stop burning fossil fuels</li>
+      <li>Rethinking vehicles</li>
+      <li>Electric cars</li>
+      <li>Energy efficiency standards for building</li>
+      <li>Changing the ways we make steel and concrete</li>
+      <li>Locally grown food</li>
+      <li>Building things that will power the world to replace fossil fuels - will create new jobs</li>
+</ul>
+The second part of the Green New Deal - how the people will be protected
+<ul>
+
+<li> the fossil fuel industry and the carbon industry and every industry that is causing greenhouse gases - it is too late to increment them slowly out of society - it will be a sharp and strict turn away</li>
+<li>0 carbon emissions, 0 fossil fuel emissions</li>
+<li>People will lose their jobs, health-care, etc..</li>
+<li>Jobs guarenteed</li>
+<li>Public employment</li>
+<li>Universal health-care</li>
+<li>Providing training and high-quality education</li>
+</ul>
+
+ GND is a longshot- however it is the only plan that acknowledges our climate's future
+<ul>
+  <li>Won't pass the Senate</li>
+<li>People say there is no way to pay for it</li>
+</ul>
+</p>
+</div>
+
+<div id="Health_Care" class="tabcontent">
+  <h1><center>Health Care</center></h1>
+  <p>
+
+    <H4>What is it?</H4>
+
+    <ul>Organized facilities to protect people's health; preventing, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical or mental impairments of people
+
+    important for promoting and maintaining health, preventing and managing diseases which reduces unecessary disabilities and premature deaths
+    </ul>
+
+      <H4> Why do people need it? </H4>
+    <ul>
+    <li>Health care elps pay costs when you need care</li>
+    <li>Health coverage helps pay for costs when people need medical care - protects people from very high expenses</li>
+    <li > provides financial protection</li>
+  </ul>
+    <H4> Why should it be free?</H4>
+    <ul>
+    It is attainable - 70 countries have passed laws toward UHC (30 being the world's poorest}
+
+    because no one should go bankrupt when they are sick - lack of healthcare traps families and nations in poverty
+
+    universal healthcare coverage can help stop the world's biggest killers. the marginalized/poor are more likely to be diagnosed with preventable diseases - such as HIV/AIDS
+
+    coronavirus and ebola crises clearly demonstrate teh urgent need to strenghten health systems everywhere
+  </ul>
+  <ul>
+    <li>Healthier communities and stronger economies
+
+    money that families spend on health, can be money Americans spend on education, starting busineeses, or emergencies - better economies, better communities
+
+    health is a right, not a privilege
+
+    https://www.globalcitizen.org/en/content/5-reasons-we-all-must-have-universal-health-covera/</li>
+
+    <li>o other countries have free health care?
+
+    Austria, Denmark, Germany, Italy, Poland, Russia, Spain, Sweden, UK    </li>
+
+    <li> Medicare
+
+    federal health-care insurance program for people who are 65 or older. This is funded by the Social Security Administration - taxpayers are paying into it, and when they are over 65 they seek the benefits of the system
+    - when
+
+    - Medicaid
+    - Obamacare
+
+
+
+
+
+
+
+
+  </p>
+</div>
+
+<div id="Immigration_Policy" class="tabcontent">
+  <h3>Immigration Policy</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div id="BLM" class="tabcontent">
+  <h3>BLM</h3>
+  <h1 > No Such Thing As Model Minorities! </h1>
+
+
+  <img src = "Black_Lives_Matter_protest.jpg" height = "200" width = "50%" align="middle">
+
+    <ul>Asian Americans are at the top of the model minority list, when in reality, they have
+    been more successful than other minority groups due to:
+    </ul>
+    <ul>
+      <li> immigration policies </li>
+      <ol>
+          <li> Immigration and Naturalized Act of 1965 </li>
+                  <ul>
+                         a. This act increased immigration for skilled Asian American workers
+                    </ul>
+        </ol>
+
+      <li> Anti-African American sentiment </li>
+      <ul>
+          Before the 1960s, Asian Americans were discriminated against and exploited for labor. <<br>
+          However, after the anti-African American movement started to gain momentum, Asian Americans <<br>
+          experienced less racism and politicians made it seem that because they had worked hard, they <<br>
+
+        </ul>
+</p>
+
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none"
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>

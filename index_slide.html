@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+#slider{
+  overflow hidden;
+}
+#slider figure{
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite
+}
+#slider img{
+      float: left;
+
+}
+@keyframes slider{
+  0%
+  {
+    left: 0px;
+  }
+  20%
+  {
+    left: 0px;
+  }
+  25%
+  {
+    left: -2000px;
+  }
+  45%
+  {
+    left: -2000px;
+  }
+  50%
+  {
+    left: -4000px;
+  }
+  70%
+  {
+    left: -4000px;
+  }
+  85%
+  {
+    left: -6000;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+  <!-- Full-width images with number and caption text -->
+      <div id="slider">
+        <figure>
+            <img src="IMG_1.jpg"  />
+                <img src="IMG_3.jpg" />
+              <img src="IMG_4.jpg" />
+          </figure>
+      </div>
+
+
+</body>
+</html>
